@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+// import { hot } from 'react-hot-loader/root'
 import './index.less'
 import * as serviceWorker from './serviceWorker'
 const Page = React.lazy(() => import('./Page'))

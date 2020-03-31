@@ -1,5 +1,4 @@
 import * as React from 'react'
-// import { hot } from 'react-hot-loader/root'
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom' // BrowserRouter HashRouter
 import App from './App'
 import Page404 from './views/404'
