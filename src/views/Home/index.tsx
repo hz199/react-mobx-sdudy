@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { observer, inject } from 'mobx-react'
-import HomeStore from '../../store/modules/home'
+import HomeStore from '../../store/modules/homeStore'
 interface IProps extends HomeStore {}
 @inject('homeStore')
 @observer

@@ -1,6 +1,6 @@
 import { RouterStore, syncHistoryWithStore } from 'mobx-react-router'
 import { createBrowserHistory } from 'history'
-import HomeStore from './modules/home'
+import HomeStore from './modules/homeStore'
 
 const browserHistory = createBrowserHistory()
 const routerStore =  new RouterStore()
