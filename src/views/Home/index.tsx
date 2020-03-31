@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
-
-export default class Home extends Component {
+import { observer, inject } from 'mobx-react'
+import HomeStore from '../../store/modules/home'
+interface IProps extends HomeStore {}
+@inject('homeStore')
+@observer
+class Home extends Component<IProps> {
   render() {
+    // console.log(this.props.homeStore.homeNum)
     return (
       <div>
         Home
@@ -9,3 +14,5 @@ export default class Home extends Component {
     )
   }
 }
+
+export default Home
