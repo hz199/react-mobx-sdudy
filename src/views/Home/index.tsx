@@ -1,15 +1,19 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { observer, inject } from 'mobx-react'
-import HomeStore from '../../store/modules/homeStore'
-interface IProps extends HomeStore {}
+import { IHome } from '../../interfaces'
+interface IProps extends IHome {}
+
 @inject('homeStore')
 @observer
-class Home extends Component<IProps> {
+class Home extends PureComponent<IProps> {
   render() {
-    // console.log(this.props.homeStore.homeNum)
+    const { homeStore } = this.props
     return (
       <div>
-        Home
+        {homeStore.homeNum}
+        <div>
+          <button onClick={() => homeStore.handle()}>点击</button>
+        </div>
       </div>
     )
   }

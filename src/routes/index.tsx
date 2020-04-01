@@ -1,9 +1,9 @@
 import React from 'react'
-import { Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Switch, Redirect, RouteComponentProps } from 'react-router-dom'
 import routeConfig, { RouteConfig } from './config'
 
-const Protected = function Protected(Comp: React.ComponentType, item: RouteConfig) {
-  return (props: any): React.ReactElement => {
+const Protected = function Protected(Comp: React.ComponentType<RouteComponentProps>, item: RouteConfig) {
+  return (props: RouteComponentProps): React.ReactElement => {
     // TODO 处理一些额外的事件
     const { meta } = item
     document.title = meta.title || 'TEST'
@@ -11,7 +11,7 @@ const Protected = function Protected(Comp: React.ComponentType, item: RouteConfi
   }
 }
 
-const RouterApp = (props: any) => {
+const RouterApp = (props: RouteComponentProps) => {
   return (
     <Switch>
       {routeConfig.map((item: RouteConfig) => (
