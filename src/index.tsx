@@ -9,11 +9,9 @@ const Page = React.lazy(() => import('./Page'))
 
 ReactDOM.render(
   <Provider {...store}>
-    <React.StrictMode>
-      <React.Suspense fallback={<div>loading...</div>}>
-        <Page />
-      </React.Suspense>
-    </React.StrictMode>
+    <React.Suspense fallback={<div>loading.....</div>}>
+      <Page />
+    </React.Suspense>
   </Provider>,
   document.getElementById('root')
 )

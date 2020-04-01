@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react'
 import { observer, inject } from 'mobx-react'
+import { Button } from 'antd'
 import { IHome } from '../../interfaces'
+
 interface IProps extends IHome {}
 
 @inject('homeStore')
@@ -12,7 +14,7 @@ class Home extends PureComponent<IProps> {
       <div>
         {homeStore.homeNum}
         <div>
-          <button onClick={() => homeStore.handle()}>点击</button>
+          <Button type="primary" onClick={() => homeStore.handle()}>点击</Button>
         </div>
       </div>
     )
