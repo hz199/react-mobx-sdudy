@@ -20,6 +20,7 @@ class Home extends PureComponent<IProps> {
         <hr/>
         <ul>
           <li><Link to="/app/binary">二叉树</Link></li>
+          <li><Link to="/app/linkedList">链表</Link></li>
         </ul>
       </div>
     )

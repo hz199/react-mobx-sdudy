@@ -34,6 +34,15 @@ const routes: RouteConfig[] = [
       title: '二叉树',
       rules: ['loginRequired']
     }
+  },
+  {
+    name: 'LinkedList',
+    path: '/app/linkedList',
+    component: lazy(() => import('../views/LinkedList')),
+    meta: {
+      title: '链表',
+      rules: ['loginRequired']
+    }
   }
 ]
 
