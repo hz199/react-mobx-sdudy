@@ -25,6 +25,15 @@ const routes: RouteConfig[] = [
       title: '首页',
       rules: ['loginRequired']
     }
+  },
+  {
+    name: 'Binary',
+    path: '/app/binary',
+    component: lazy(() => import('../views/Binary')),
+    meta: {
+      title: '二叉树',
+      rules: ['loginRequired']
+    }
   }
 ]
 

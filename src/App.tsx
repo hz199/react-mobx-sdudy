@@ -7,9 +7,6 @@ function App (props: RouteComponentProps) {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.....
-        </p>
         <React.Suspense fallback={<div>loading...</div>}>
           <RouterApp {...props} />
         </React.Suspense>
