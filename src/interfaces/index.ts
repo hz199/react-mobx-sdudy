@@ -1,6 +1,3 @@
-import { RouteComponentProps } from 'react-router-dom'
-import HomeStore from '../store/modules/homeStore'
+import * as HomeInterfaces from './homeInterfaces'
 
-export interface IHome extends RouteComponentProps {
-  homeStore: HomeStore
-}
+export { HomeInterfaces }

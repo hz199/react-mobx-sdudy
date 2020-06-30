@@ -26,24 +26,6 @@ const routes: RouteConfig[] = [
       rules: ['loginRequired']
     }
   },
-  {
-    name: 'Binary',
-    path: '/app/binary',
-    component: lazy(() => import('../views/Binary')),
-    meta: {
-      title: '二叉树',
-      rules: ['loginRequired']
-    }
-  },
-  {
-    name: 'LinkedList',
-    path: '/app/linkedList',
-    component: lazy(() => import('../views/LinkedList')),
-    meta: {
-      title: '链表',
-      rules: ['loginRequired']
-    }
-  }
 ]
 
 export default routes
