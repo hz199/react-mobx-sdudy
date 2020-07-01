@@ -13,6 +13,7 @@ const injectMenu = (menus: Array<MenusConfig>) => {
           key={itemMenu.title}
           title={
             <span>
+              <itemMenu.icon></itemMenu.icon>
               <span>{itemMenu.title}</span>
             </span>
           }
@@ -23,6 +24,7 @@ const injectMenu = (menus: Array<MenusConfig>) => {
     } else {
       return (
         <Menu.Item key={itemMenu.path}>
+          <itemMenu.icon></itemMenu.icon>
           <span>{itemMenu.title}</span>
         </Menu.Item>
       )
@@ -32,17 +34,15 @@ const injectMenu = (menus: Array<MenusConfig>) => {
 
 // 跟菜单
 const Menus = (props: MenusProps) => {
-  const handleMenu = (params: any) => {
-    if (params.key !== props.history.location.pathname) {
-      props.history.push(params.key)
-    }
-  }
+  // const handleMenu = (params: any) => {
+  //   if (params.key !== props.history.location.pathname) {
+  //     props.history.push(params.key)
+  //   }
+  // }
 
   return (
     <Menu
       theme="dark"
-      defaultSelectedKeys={[props.history.location.pathname]}
-      onClick={handleMenu}
       mode="inline"
     >
       {injectMenu(menuConfig)}

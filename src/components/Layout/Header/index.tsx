@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Layout, Breadcrumb, Avatar, Dropdown, Menu } from 'antd'
-// import { HomeOutlined } from '@ant-design/icons'
+import { HomeOutlined, MenuFoldOutlined } from '@ant-design/icons'
 import './index.less'
 
 interface IProps {
@@ -18,6 +18,7 @@ const AdminHeader = (props: IProps) => {
   const BreadcrumbElement = (
     <Breadcrumb className="admin-breadcrumb">
       <Breadcrumb.Item >
+        <HomeOutlined />
         <span>首页</span>
       </Breadcrumb.Item>
       <Breadcrumb.Item>
@@ -41,8 +42,8 @@ const AdminHeader = (props: IProps) => {
 
   return (
     <Layout.Header style={{ background: '#fff', padding: 0 }} className="clearfix">
-      <div className="pull-left">
-        icon
+      <div className="pull-left" style={{padding: '0 20px', cursor: 'pointer'}}>
+        <MenuFoldOutlined/>
       </div>
       <div className="breadcrumb pull-left">{BreadcrumbElement}</div>
       <div className="header-auth-wrapper pull-right">

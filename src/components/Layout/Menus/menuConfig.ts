@@ -1,5 +1,7 @@
+import { HomeOutlined, MenuFoldOutlined } from '@ant-design/icons'
+
 export interface MenusConfig {
-  icon: string
+  icon: any
   title: string
   path?: string
   SubMenu?: Array<MenusConfig>
@@ -7,37 +9,37 @@ export interface MenusConfig {
 
 const menus: Array<MenusConfig> = [
   {
-    icon: 'pie-chart',
+    icon: HomeOutlined,
     title: '首页',
     path: '/app'
   },
   {
-    icon: 'table',
+    icon: MenuFoldOutlined,
     title: '表格',
     SubMenu: [
       {
-        icon: 'table',
+        icon: MenuFoldOutlined,
         path: '/app/tables/table1',
         title: '导出Excel'
       },
       {
-        icon: 'table',
+        icon: MenuFoldOutlined,
         path: '/app/tables/importTable',
         title: '导入Excel'
       }
     ]
   },
   {
-    icon: 'compass',
+    icon: MenuFoldOutlined,
     title: '组件',
     SubMenu: [
       {
-        icon: 'loading-3-quarters',
+        icon: MenuFoldOutlined,
         path: '/app/components/loadingBar',
         title: 'LoadingBar'
       },
       {
-        icon: 'drag',
+        icon: MenuFoldOutlined,
         path: '/app/components/dragAblePage',
         title: '简易拖拽'
       }
