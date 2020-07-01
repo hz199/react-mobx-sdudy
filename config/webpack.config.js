@@ -74,7 +74,7 @@ module.exports = function(webpackEnv) {
   const env = getClientEnvironment(paths.publicUrlOrPath.slice(0, -1));
 
   // common function to get style loaders
-  const getStyleLoaders = (cssOptions, preProcessor) => {
+  const getStyleLoaders = (cssOptions, preProcessor, additionalLoaderOptions = {}) => {
     const loaders = [
       isEnvDevelopment && require.resolve('style-loader'),
       isEnvProduction && {
@@ -127,6 +127,7 @@ module.exports = function(webpackEnv) {
           loader: require.resolve(preProcessor),
           options: {
             sourceMap: true,
+            ...additionalLoaderOptions
           },
         }
       );
@@ -157,6 +158,7 @@ module.exports = function(webpackEnv) {
       // require.resolve('webpack-dev-server/client') + '?/',
       // require.resolve('webpack/hot/dev-server'),
       isEnvDevelopment &&
+        // require.resolve('webpack/hot/dev-server'),
         require.resolve('react-dev-utils/webpackHotDevClient'),
       // Finally, this is your app's code:
       paths.appIndexJs,
@@ -510,7 +512,6 @@ module.exports = function(webpackEnv) {
                 },
                 'less-loader',
                 {
-                  javascriptEnabled: true,
                   ...lessAntdTheme
                 }
               ),
@@ -527,7 +528,6 @@ module.exports = function(webpackEnv) {
                 },
                 'less-loader',
                 {
-                  javascriptEnabled: true,
                   ...lessAntdTheme
                 }
               ),

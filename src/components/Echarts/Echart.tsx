@@ -20,10 +20,6 @@ interface IProps<T = any> {
 class Chart extends PureComponent<IProps> {
   private chart: ECharts | null = null
   private el: HTMLDivElement | null = null
-  constructor(props: IProps) {
-    super(props)
-  }
-
   static propTypes = {
     option: PropTypes.object.isRequired,
     renderer: PropTypes.string, // 渲染器 默认 canvas 可选 svg

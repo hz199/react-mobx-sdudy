@@ -17,3 +17,8 @@ ReactDOM.render(
 )
 
 serviceWorker.unregister()
+
+// 模块热替换的 API
+if ((module as any).hot) {
+  (module as any).hot.accept();
+}
