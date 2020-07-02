@@ -4,6 +4,7 @@ import { HomeOutlined, MenuFoldOutlined } from '@ant-design/icons'
 import './index.less'
 
 interface IProps {
+  onMenuClick: (event: React.MouseEvent<HTMLSpanElement, MouseEvent>) => void
 }
 
 // const menuIconStyle: React.CSSProperties = {
@@ -42,7 +43,7 @@ const AdminHeader = (props: IProps) => {
 
   return (
     <Layout.Header style={{ background: '#fff', padding: 0 }} className="clearfix">
-      <div className="pull-left" style={{padding: '0 20px', cursor: 'pointer'}}>
+      <div className="pull-left" style={{padding: '0 20px', cursor: 'pointer'}} onClick={props.onMenuClick}>
         <MenuFoldOutlined/>
       </div>
       <div className="breadcrumb pull-left">{BreadcrumbElement}</div>

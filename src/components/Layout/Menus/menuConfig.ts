@@ -1,7 +1,7 @@
 import { HomeOutlined, MenuFoldOutlined } from '@ant-design/icons'
 
 export interface MenusConfig {
-  icon: any
+  icon: Function
   title: string
   path?: string
   SubMenu?: Array<MenusConfig>

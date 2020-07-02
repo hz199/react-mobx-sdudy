@@ -10,14 +10,76 @@ interface IProps extends HomeInterfaces.IHome {}
 class Home extends PureComponent<IProps> {
   render() {
     const { homeStore } = this.props
-    console.log(this.props)
+    // console.log(this.props)
     return (
       <div>
         {homeStore.homeNum}
         <div>
           <Button type="primary" onClick={() => homeStore.handle()}>点击</Button>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
+          <p>哈哈</p>
         </div>
-        <hr/>
       </div>
     )
   }
