@@ -67,6 +67,7 @@ class App extends React.PureComponent<AppInterfaces.IAppProps> {
 
     const Sider = (
       <Layout.Sider style={{position: 'fixed',left: 0, top: 0, bottom: 0}} collapsed={collapsed}>
+        <div className="admin-logo">logo</div>
         <Scrollbars>
           <Menus></Menus>
         </Scrollbars>
