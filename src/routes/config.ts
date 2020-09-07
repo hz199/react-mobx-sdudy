@@ -8,7 +8,7 @@ interface Meta {
    */
   flag?: boolean
 }
-
+// React.LazyExoticComponent<typeof Home>
 export interface RouteConfig<T = any> {
   name: string
   path: string

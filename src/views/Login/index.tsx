@@ -1,11 +1,14 @@
 import React, { PureComponent } from 'react'
+import './index.less'
 interface IProps {}
 
 class Login extends PureComponent<IProps> {
   render() {
     return (
-      <div>
-        Login
+      <div className="login">
+        <div className="login__form">
+          form
+        </div>
       </div>
     )
   }

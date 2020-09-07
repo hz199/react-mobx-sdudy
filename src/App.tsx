@@ -104,7 +104,6 @@ class App extends React.PureComponent<AppInterfaces.IAppProps> {
               this.handleMenuClick()
             }}
           ></AdminHeader>
-          
           <Layout.Content
             style={{ margin: '8px 16px 0', display: 'flex', flexDirection: 'column' }}
           >
@@ -114,7 +113,7 @@ class App extends React.PureComponent<AppInterfaces.IAppProps> {
               </React.Suspense>
             </div>
             <Layout.Footer style={{ textAlign: 'center' }}>
-              react-admin ©2019 Created by H.Z
+              react-admin ©2020 Created by H.Z
             </Layout.Footer>
           </Layout.Content>
         </Layout>

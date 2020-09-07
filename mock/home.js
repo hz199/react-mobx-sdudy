@@ -31,7 +31,7 @@ module.exports = function(app) {
             'number|100-9999': 100
           }
         ],
-        LineBarChartOption: {
+        lineBarChartOption: {
           title: '@ctitle(5)',
           'series|2-3': [
             {
@@ -62,7 +62,7 @@ module.exports = function(app) {
             key: '@string(7, 10)'
           }
         ],
-        'CommentList|3-4': [
+        'commentList|3-4': [
           {
             actions: '@ctitle(2)',
             author: '@cname',
